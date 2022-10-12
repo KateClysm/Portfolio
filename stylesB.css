@@ -1,85 +1,63 @@
+/*TO ALL*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/*TO ALL*/
 
+/*CLASES REUTILIZADAS*/
 :root{
-    --ocean: rgb(26, 60, 64);
-    --deepBlue: #236b73;
-    --oldWave: rgb(12, 121, 115);
-    --brightBlue: #1ae6db;
+    --ocean: #1a3c40;
+    --oldWave: #0c7973;
+    --brightBlue: #00f7ff;
+    --rich: #b3022e;
+    --spicy:#f80240;
 }
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    /* background-color: var(--ocean); */
-    
-}
-.gradient{
-    background: linear-gradient( var(--oldWave),rgb(182, 23, 44), var(--ocean));
-}
-
-.nav-item a:hover, .brand:hover{
-    color: var(--brightBlue);
-    transition: ease-in 0.3s; 
-}
-.logo-Plan{
-    height: 90px;
+.bg-wave{
+    background-color: var(--oldWave);
 }
 .nav-item a, .brand{
     color:#fff;
 }
-.proyect1, .proyect2{    
-    background-size: cover;
-}
-.proyect1{
-    background-image: url(./images/handsOnComputer2--pexels-cottonbro.jpg);
-}
-.proyect2{
-    background-image: url(./images/teclado--pexels-josh-sorenson.jpg);
-}
-.bg-image{
-    background-image: url(./images/descarga-op45.png);
-    height: 100vh;
-    background-size: cover;
-}
-
-.btn-bright{
-    padding: 0.9rem 1rem;
-    background-color: var(--oldWave);
-    color: #fff;
-    font-weight: bold;
-    font-size: 0.8rem;
-    border: none;
-    border-radius: 1em;
-    cursor: pointer;  
-    letter-spacing: 0.05rem;
-}
-.btn-bright:hover{
-    background-color: #fff;
-    color: var(--ocean);
-    transition: ease-in 0.3s; 
-}
-
-/*CLASES REUTILIZADAS*/
 .btn-white-ocean{
-    padding: 0 0.1rem;
     background-color: #fff;
     border: none;
     border-radius: 0.5em;
     cursor: pointer; 
+    color: var(--ocean);
 }
-.btn-white-ocean a{color: var(--ocean);}
+.btn-white-ocean a {color: var(--ocean);}
 .btn-white-ocean:hover{
     background-color: transparent;
     transition: ease-in 0.3s; 
-}
-/*CLASES REUTILIZADAS*/
-
-
-.text-teal{
     color: var(--brightBlue);
+}
+.hover-spicy:hover{
+    background-color: transparent;
+    transition: ease-in 0.3s; 
+    color: var(--spicy);
+}
+.nav-item a:hover, .brand:hover{
+    color: var(--brightBlue);
+    transition: ease-in 0.3s; 
+}
+.box-shadow-ocean{
+    box-shadow: 0px 0px 20px var(--ocean);
+}
+.bottom-spicy{
+    
+    box-shadow: 0px 3px 3px var(--spicy);
+}
+.border-exp{
+    border: 1px solid var(--spicy);
+    border-radius: 3%;
+    box-shadow: 0px 0px 20px #b3022e;
+}
+.text-teal{color: var(--brightBlue);}
+.text-spicy{
+    color: var(--spicy);
+    text-shadow: 0px 2px 5px  var(--ocean);
 }
 .text-ocean{
     color: var(--ocean);
@@ -87,28 +65,59 @@ body{
 .border-teal{
     border: 0.1rem solid var(--brightBlue);
 }
-
-.border-bottom-teal{
-    border-bottom: 0.1rem solid var(--brightBlue);
-}
-
-/* .acerca{
-    background-color: var(--oldWave);
-} */
-
-.relax{
-    transform: scaleX(-1);
+.img-section{
     width: 280px;
 }
-/* 
-.educacion{
-    background-color: var(--deepBlue);
-} */
-
-.bg-ocean{
-    background-color: var(--ocean);
+.habilidadesIcon{
+    text-shadow: 0px 3px 3px  var(--brightBlue);
+    font-size: 5rem;
 }
-
-.bg-brigth{
-    background-color: var(--brightBlue);
+.habilidadesIcon:hover{
+    color: var(--oldWave);
+    text-shadow: 0px 3px 3px  var(--spicy);
 }
+textarea{
+    resize: none;
+}
+/*CLASES REUTILIZADAS*/
+
+/*CUERPO*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.gradient{
+    background: linear-gradient(var(--oldWave), var(--spicy),var(--rich),  var(--rich), var(--ocean), var(--oldWave),var(--oldWave),var(--spicy) );
+}
+.bg-image{height: 100vh;}
+.logo-Plan{height: 90px;}
+/*CUERPO*/
+
+
+/*EDUCACIÓN*/
+.accordion-button:not(.collapsed){
+    color: #fff;
+    background-color: var(--oldWave);
+    font-weight: bold;
+}
+.accordion-button{
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+.accordion-collapse{
+    transition: 0.5s;
+}
+.accordion{
+    border-radius: 0.8rem;
+    outline: none;
+}
+.border-muted-bottom{
+    border: none;
+    border-bottom: 0.5px solid rgba(138, 138, 138, 0.418);
+}
+/*EDUCACIÓN*/
+
+/*CONTACTO*/
+.form-control:focus{
+    border: 1px solid var(--spicy);
+}
+/*CONTACTO*/

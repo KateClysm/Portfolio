@@ -9,7 +9,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
       <!--CSS-->
-      <link rel="stylesheet" href="stylessB.css">
+      <link rel="stylesheet" href="stylesB.css">
 
       <!--GOOGLE FONTS-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +22,6 @@
 
 <body class="gradient">
 
-
-  
   <!--PRIMERA VISTA-->
   <div class="bg-image"> 
 
@@ -44,7 +42,7 @@
         </button>
         <!--Botón de apertura en dispositivos pequeños-->
 
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end text-bg-dark " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <!--Text-bg-dark aplica el estilo a la barra lateral-->
 
           <div class="offcanvas-header">
@@ -54,13 +52,13 @@
           </div>
 
 
-          <div class="offcanvas-body">
+          <div class="offcanvas-body ">
             <!--Offcanvas es un componente de barra lateral-->
 
-            <ul class="navbar-nav pe-5 gap-4 align-items-center">
+            <ul class="navbar-nav pe-5 gap-4 align-items-center ">
               <!--El padding-end agrega un espaciado entre cada ícono, y el gap agrega un margen adicional a cada uno. El Align centra todos los íconos a la misma cuerda horizontal-->
 
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
 
@@ -94,17 +92,21 @@
     </nav>
     <!--NAVEGACIÓN-->
 
-
     <!--PRINCIPAL-->
-    <div class="container-fluid principal">
-    <!--aplico-->
+    <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 80vh;">
 
-      <div class="container-fluid text-center mt-5 pt-5 text-white">
-        <h1 class="display-1 pb-2 pb-sm-4">Soy <span class="text-teal">Maria Monchot</span>.</h1>
-        <h2 class="text-white fs-3 pb-2 pb-sm-4">Desarrolladora Web Full Stack Junior</h2>
-        <button type="button" class="btn-bright px-sm-4 mb-5">Descargar CV</button>
-        <p class="mt-5 pt-3 text-center">Actualizado por última vez en: Octubre, 2022. </p>
+      <div class="container text-center text-white">
+        <h1 class="pb-1 text-spicy display-1 ">MARIA MONCHOT</h1>
+        <h2 class="text-white fs-3 pb-2">Desarrolladora Web Full Stack Junior</h2>
+        <p>Actualizado por última vez en: Octubre, 2022. </p>
+        <button type="button" class="btn-white-ocean p-2 mt-3">Descargar CV</button>
+
+        <div class="container row pt-5 mx-auto">
+          <i class="fa-solid fa-angle-down "></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
       </div>
+      
     </div>
     <!--PRINCIPAL-->
 
@@ -112,143 +114,146 @@
   <!--PRIMER AVISTA-->
 
 
-
   <!--ACERCA DE-->
-  <div class="container-fuid text-white py-3 my-3">
+  <div class="container-fuid text-white my-5 mx-2 mx-sm-5">
 
-   <div class="container-fluid row d-flex align-items-start mx-auto">
+    <div class="container-fluid row d-flex align-items-start mx-auto p-2 p-md-5 bg-wave rounded-5 box-shadow-ocean">
 
-    <div class="container-fluid col-sm-12 col-lg-4 mb-5 mb-sm-0">
-      <img src="./images/relax.png" class="relax d-block mx-auto img-fluid " alt="Persona tomando un café">
-      <!--d-block permite centrar la imagen con mx-auto-->
+        <div class="container-fluid col-sm-12 col-lg-4 mb-5 mb-sm-0">
+          <img src="./images/relax (2).png" class="img-section d-block mx-auto img-fluid " alt="Persona tomando un café">
+          <!--d-block permite centrar la imagen con mx-auto-->
+        </div>
+
+        <div class="col-sm-12 col-lg-8 my-sm-auto pe-sm-5">
+          <h2 class=" mb-3 fs-1">Acerca de mí</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ut nobis hic! Animi officia doloremque, rerum sapiente in sed pariatur consequatur earum eaque non ipsam commodi architecto consequuntur natus quae?</p>
+         
+        </div>
     </div>
-
-    <div class="col-sm-12 col-lg-8 my-sm-auto pe-sm-5">
-      <h2 class=" mb-3 fs-1">Acerca de mí</h2>
-      <p>Conocí a la Programación y al Desarrollo Web a finales de 2021 y desde entonces se convirtió rápidamente en mi vocación. En 2022, comencé a estudiar Informática en la UNLP y a cursar el Plan Programar Argentina.</p>
-      <p> En su gran mayoría, he adquirido mis conocimientos de manera autodidacta. Y aunque tengo un enfoque al Desarrollo Web, me interesaría en un futuro aprender sobre Inteligencia Artificial.</p>
-    </div>
-   </div>
   </div>
   <!--ACERCA DE-->
 
   
-
   <!--EDUCACIÓN-->
-  <div class="container-fluid px-sm-5 px-4 py-3 my-5 text-white educacion">
+  <div class="container-fuid text-white my-5 mx-2 mx-sm-5">
 
-    <h2 class="pb-2 border-bottom fs-1">Educación</h2>
+    <div class="container-fluid row d-flex align-items-start mx-auto px-2 px-md-5 py-2 bg-white rounded-5 box-shadow-ocean">
 
-    
-    <!-- <div class="row align-items-md-stretch py-5 mt-4">
-
-      <div class="col-12 col-md-6 col-sm-12 col-lg-4 mb-4">
-        <div class="h-100 p-5 bg-ocean border-teal rounded-3">
-          <h2>Bachillerato en Comunicación</h2>
-          <p>Fecha</p>
-          <p class="lead">Nombre Colegio</p>
-          <p>Realizado en/mediante:</p>
+      <div class="col-sm-12 col-lg-8 my-sm-auto pe-sm-5">
+        <div class="py-4 px-2 mx-auto">
+          <h2 class="fs-1 text-dark text-center">Educación</h2>
+          <div class="accordion pt-3" id="accordionExample">
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header " id="headingOne">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Bachillerato en Comunicación
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body ">
+                  <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing. </strong></p> 
+                  <p><strong>Fecha: </strong> 00/00/0000</p> 
+                  <p><strong>Mediante: </strong> 00/00/0000</p> 
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Tecnicatura Analista Programador Universitario
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body ">
+                  <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing. </strong></p> 
+                  <p><strong>Fecha: </strong> 00/00/0000</p> 
+                  <p><strong>Mediante: </strong> 00/00/0000</p> 
+                </div>
+              </div>
+            </div>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Plan Programar Argentina
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-sm-12 col-lg-4 mb-4">
-        <div class="h-100 p-5 bg-light text-ocean rounded-3 border-teal">
-          <h2>Tecnicatura Analista Programador Universitario</h2>
-          <p>Fecha</p>
-          <p class="lead">Nombre Universidad</p>
-          <p>Realizado en/mediante:</p>
-        </div>
+      <div class="container-fluid col-sm-12 col-lg-4 mb-5 mb-sm-0">
+        <img src="./images/woman.png" class=" d-block justify-content-around img-fluid mx-auto" alt="Persona tomando un café img-section" >
       </div>
-
-      <div class="col-12 col-md-6 col-sm-12 col-lg-4 mb-4">
-        <div class="h-100 p-5 bg-light text-ocean rounded-3 border-teal">
-          <h2>Certificado Desarrolladora Web Full Stack Junior</h2>
-          <p>Fecha</p>
-          <p class="lead">Plan Programar Argentina</p>
-          <p>Realizado en/mediante: Entorno Virtual</p>
-          <button class="btn-bright mt-2" type="button">Conocer más</button>
-        </div>
-      </div>
-    </div> -->
+    </div>
   </div>
   <!--EDUCACIÓN-->
 
 
   <!--HABILIDADES DURAS Y BLANDAS-->
-  <div class="container-fluid px-auto px-sm-5 py-5 my-3 text-white habilidades ">
-
-    <h2 class="pb-2 border-bottom">Set de Habilidades</h2>
-
-    <div class="row pt-5 mt-3 d-flex align-items-center">
+  <div class="container-fluid px-auto px-auto my-5 text-white">
+    
+    <div class="row pt-5 mt-3 d-flex mx-auto justify-content-center gap-5 align-items-center">
 
       <div class="col-lg-4">
-        <img src="./images/office.png" class=" img-skills d-block img-fluid mx-sm-auto" width="450" alt="">
+        <img src="./images/office.png" class=" img-skills d-block img-fluid m-auto pb-1" width="450" alt="">
+        <h2 class="pt-4 ps-3 text-center fs-1">Set de Habilidades</h2>
       </div>
 
-      <div class="col-lg-8 px-auto px-sm-5 ">
-        <h3 class="fs-3 text-white my-4"></h3>
+      <!--Columna de habilidades-->
+      <div class="col-lg-6 m-0 mx-md-2 p-0 px-sm-5 p-md-4 py-md-5 ">
 
-        <div class="mb-3">
-          <label for="">HTML & CSS</label>
-          <div class="progress" style="height: 25px;">
+        <!--Interior-->
+        <div class="row text-white d-flex align-items-center justify-content-around mx-auto">
 
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermedio-Avanzado
-            </div>
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-html5"></i>
           </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-css3-alt"></i>
+          </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-js"></i>
+          </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-node-js"></i>
+          </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-bootstrap"></i>
+          </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-angular"></i>
+          </div>
+
+          <div class="col-4 p-3 text-center">
+            <i class="habilidadesIcon text fa-brands fa-java"></i>
+          </div>
+
         </div>
 
-        <div class="mb-3">
-          <label for="">JavaScript</label>
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermedio
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="">Bootstrap</label>
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermedio
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="">HTML & CSS</label>
-          <div class="progress" style="height: 25px;">
-
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:75%;" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermedio-Avanzado
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="">JavaScript</label>
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermedio
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="">Bootstrap</label>
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar  bg-brigth text-ocean fs-6" style="width:50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Intermedio
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
-
-    <div class="container-fluid my-5 text-ocean">
+    <!--habilidades blandas-->
+    <div class="container-fluid mt-5 pt-5 px-5 text-ocean">
       
-      <div class="p-5 bg-light rounded-3">
+      <div class="p-0 p-md-5 bg-light rounded-4 box-shadow-ocean">
         <div class="container-fluid">
-
-          <h1 class="display-5 pb-3">Un poco sobre mis habilidades blandas</h1>
-
-          <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deserunt explicabo quibusdam dolorum quam! Inventore reprehenderit autem doloremque modi eveniet, porro, sint facilis quisquam aut quo deserunt quidem excepturi pariatur magnam nulla a, nostrum temporibus distinctio est ad. Saepe dolorem possimus assumenda consequuntur iste hic suscipit adipisci quas natus cumque.</p>
+          <h1 class="display-5 pb-3 pt-4 pt-sm-0">Un poco sobre mis habilidades blandas</h1>
+          <p class="fs-6 fs-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deserunt explicabo quibusdam dolorum quam! Inventore reprehenderit autem doloremque modi eveniet, porro, sint facilis quisquam aut quo deserunt quidem excepturi pariatur magnam nulla a, nostrum temporibus distinctio est ad. Saepe dolorem possimus assumenda consequuntur iste hic suscipit adipisci quas natus cumque.</p>
 
         </div>
       </div>
@@ -257,84 +262,129 @@
   </div>
   <!--HABILIDADES DURAS Y BLANDAS-->
 
+  <!--EXPERIENCIA-->
+  <div class="container-fluid px-auto px-sm-5 text-white d-flex align-items-center" id="icon-grid">
 
-  <!--PROYECTOS-->
-  <!-- <div class="container-fluid px-sm-5 px-3 py-5 my-3 text-white educacion">
+    <div class="container-fluid ">
+      <h2 class="py-5 fs-1 text-center">Experiencia</h2>
+    <div class="row d-flex justify-content-center mx-2 py-3 py-md-4">
 
-    <h2 class="pb-2 border-bottom">Proyectos</h2>
-
-    <div id="carouselExampleControls" class="carousel slide"  data-bs-ride="carousel">
-      <div class="carousel-inner " style="height: 500px;">
-        <div class="carousel-item active">
-          <img src="./images/teclado--pexels-josh-sorenson.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/handsOnComputer2--pexels-cottonbro.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/handsOnComputer--pexels-cottonbro.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div> -->
-  <!--PROYECTOS-->
-
-<!--EXPERIENCIA-->
-<div class="container-fluid px-5 py-5 mt-3 text-white" id="icon-grid">
-  <h2 class="pb-2 border-bottom fs-1">Experiencia</h2>
-
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 py-5 mt-3 d-flex mx-0">
-
-    <div class="col d-flex justify-content-center">
-      <div>
-        <h3 class="fw-bold mb-3 fs-4 ">Nombre Empresa</h3>
-        <p>Puesto</p>
-        <p>Periodo</p>
-        <p>Actividades realizadas</p>
-      </div>
+    <div class="col col-sm-5 col-md-3 border-exp p-3 m-2 mx-4 ">
+      <h3 class="fw-bold mb-3 fs-4 ">Nombre Empresa </h3>
+      <p>Puesto</p>
+      <p>Periodo</p>
+      <p>Actividades realizadas</p>
     </div>
     
-    <div class="col d-flex justify-content-center">
-      <div>
-        <h3 class="fw-bold mb-3 fs-4 ">Nombre Empresa</h3>
-        <p>Puesto</p>
-        <p>Periodo</p>
-        <p>Actividades realizadas</p>
-      </div>
+    <div class="col col-sm-5 col-md-3 border-exp p-3 m-2 mx-4">
+      <h3 class="fw-bold mb-3 fs-4">Nombre Empresa kfnfsznsns</h3>
+      <p>Puesto</p>
+      <p>Periodo</p>
+      <p>Actividades realizadas</p>
     </div>
 
-    <div class="col d-flex justify-content-center">
-      <div>
-        <h3 class="fw-bold mb-3 fs-4 ">Nombre Empresa</h3>
-        <p>Puesto</p>
-        <p>Periodo</p>
-        <p>Actividades realizadas</p>
-      </div>
+    <div class="col col-sm-5 col-md-3 border-exp p-3 m-2 mx-4">
+      <h3 class="fw-bold mb-3 fs-4">Nombre Empresa </h3>
+      <p>Puesto</p>
+      <p>Periodo</p>
+      <p>Actividades realizadas</p>
+    </div>
+    </div>
+    
+      
+      
     </div>
   </div>
-</div>
-<!--EXPERIENCIA-->
+  <!--EXPERIENCIA-->
+
+
+  <!--CONTACTO-->
+  <div class="container-fluid px-auto px-auto my-5 text-white">
+    
+    <div class="row pt-5 mt-3 d-flex mx-auto justify-content-center gap-5 align-items-center">
+
+      <!--Form-->
+      <div class="col-lg-6 m-0 p-0 mx-md-2 px-sm-5 p-md-4 py-md-5 ">
+        <!--Interior-->
+        <div class="row text-white d-flex align-items-center justify-content-around mx-auto container px-0">
+
+          <div class="col box-shadow-spicy rounded-4 p-3">
+
+            <div class="row">
+              <h2 class="text-center mb-4 fs-1">Contactame</h2>
+            </div>
+
+            <div class="row">
+              <div class="col p-2">
+                <input type="text" class="form-control bottom-spicy" placeholder="Nombre">
+              </div>
+  
+              <div class="col p-2">
+                <input type="text" class="form-control bottom-spicy" placeholder="Asunto">
+              </div>
+            </div>
+
+            <div class="row p-2">
+              <input type="text" class="form-control bottom-spicy" placeholder="email@gmail.com">
+            </div>
+
+            <div class="row p-2">
+              <textarea name="" id="" class="form-control bottom-spicy"  rows="4" placeholder="Escriba su Email"></textarea>
+            </div>
+
+            <div class="row">
+              <div class="col p-2">
+                  <!-- Button trigger modal -->
+                <button type="button" class="btn-white-ocean  bottom-spicy hover-spicy p-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Enviar
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-ocean" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body text-ocean">
+                        <p>Your Message has been sent</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+
+      </div>
+
+      <!--Img-->
+      <div class="col-lg-4">
+        <img src="./images/woman (1).png" class=" img-skills d-block img-fluid m-auto pb-1" width="450" alt="">
+      </div>
+    </div>
+
+  </div>
+  <!--CONTACTO-->
+
+
 
   <!--FOOTER-->
-  <div class="container-fluid">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-white">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-        </a>
+  <div class="container-fluid border-top py-3">
+    <footer class=" d-flex flex-wrap justify-content-between align-items-center  mx-3 text-white">
+
+      <div class="col-12 col-md-8 d-flex align-items-center">
         <span class="mb-3 mb-md-0">Maria Monchot-Front End Web Developer Junior</span>
       </div>
   
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="nav-item" >
+      <ul class="nav col-12 col-md-4 d-flex justify-content-center justify-content-lg-end align-items-center list-unstyled ">
+        <li class="nav-item " >
           <a class="nav-link" href="#"><i class="fs-3 fa-brands fa-github"></i></a>
         </li>
 
