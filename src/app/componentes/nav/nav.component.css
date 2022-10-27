@@ -1,0 +1,46 @@
+.nav-item .login {
+    color: #fff;
+}
+
+.logo-Plan{height: 2rem;
+margin-top: -0.3rem;}
+
+.nav-item a, .brand{
+    color:#fff;
+}
+
+.nav-item a:hover, .brand:hover{
+    color: var(--dark);
+    transition: ease-in 0.3s; 
+}
+
+.navbar{
+    height: 5vh;
+}
+
+.navbar-toggler {
+    border: none;
+    
+}
+.navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+
+    
+    
+}
+.sm-text{
+    font-size: small;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+.bg-offcanvas-nav{
+
+}
+.offcanvas.showing, .offcanvas.show:not(.hiding) {
+    background-color: #896454ad;
+   
+    
+}

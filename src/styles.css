@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+/*TO ALL*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*CLASES REUTILIZADAS*/
+:root{
+    --dark: #483940;
+    --medium: #896454;
+    --light:#c3a08f;
+    --peach: #d4c3ac;
+    --oldblue: #7c9ac3;
+}
+
+
+/*CUERPO*/
+.cuerpo{
+    font-family: 'Montserrat', sans-serif;    
+}
+.principal{
+    background-image: url(assets/images/cozydesk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.contacto{
+    background-image: url(src\assets\images\pexels-merve-tülek-11093427.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/*CUERPO*/
+
+/*temporal para edición*/
+.img-section{
+    width: 280px;
+}
+.info{
+    background: linear-gradient(var(--dark), var(--medium), var(light));
+    background-image: url(src\assets\images\image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.experiencia{
+    background-image: url( src\assets\images\pexels-merve-tülek-11093427.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
