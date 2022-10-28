@@ -9,6 +9,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { SobremiComponent } from './componentes/sobremi/sobremi.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { SobremiComponent } from './componentes/sobremi/sobremi.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

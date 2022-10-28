@@ -56,3 +56,6 @@
 .text-darkk{
     color: var(--dark);
 }
+.logo-image{
+    border-radius: 2rem;
+}
