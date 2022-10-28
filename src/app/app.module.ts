@@ -10,6 +10,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { SobremiComponent } from './componentes/sobremi/sobremi.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AccesoComponent } from './componentes/acceso/acceso.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactoComponent,
     FooterComponent,
     SobremiComponent,
+    AccesoComponent,
   ],
   imports: [
     BrowserModule,
