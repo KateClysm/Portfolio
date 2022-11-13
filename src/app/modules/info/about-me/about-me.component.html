@@ -1,0 +1,129 @@
+
+<div class="container-fluid d-flex row px-0 mx-0 pt-5 justify-content-center sobremi">
+    <!--row 1 con la foto y título-->
+    <div class="row align-items-center justify-content-center p-0 pt-5">
+        <div class="col-5 m-auto col-sm-4">
+            <img src="./assets/images/relax (2).png" class="img-section d-block mx-auto my-auto img-fluid mx-0 p-0 " alt="Persona tomando un café">
+        </div>
+        <div class="col text-white p-0 pe-2 pe-md-5">
+            <h2 class="fs-3">Sobre mí
+                <a href="#">
+                    <i class="fa-solid fa-pen text-white"></i>
+                </a>
+            </h2>
+            <p>Mi mayor cualidad es ser Autodidacta.
+            </p>
+        </div>
+    </div>  
+    
+    <!--Row 2 con las Secciones-->
+    <div class="row d-flex justify-content-sm-end justify-content-center py-3 px-0">
+
+        <!--Dos columnas, una pertenece a una línea decorativa que aparece a partir de bp sm y la otra pertenece a las secciones-->
+        <div class="col-2 p-0 vr px-md-1 d-sm-flex justify-content-end d-none"></div>
+    
+        <div class="col col-sm-10 text-white justify-content-center mt-3 mt-lg-5">
+    
+            <!--Educacion-->
+            <div class="row mx-0 px-lg-5">
+                <h2 class="fs-4 pb-2 border-bottom">Educación
+                    <a href="#">
+                        <i class="fa-solid fa-pen text-white fs-6"></i>
+                    </a>
+                </h2>
+    
+                <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
+                    
+                    <div class="col-12 col-md col-lg text-center text-sm-start px-1 card-educacion py-2 py-lg-3" *ngFor="let educacion of educacionList">
+    
+                        <h4 class="fs-5">{{educacion.name}}</h4>
+                        <p class="sm-text">{{educacion.mediante}}</p>
+                        <p class="sm-text">{{educacion.periodo}}</p>
+                        <p class="sm-text">{{educacion.detalle}}</p>
+                    </div>
+                </div>  
+            </div>
+            <!--Tecnologías Principales-->
+            <div class="row mx-0 px-lg-5">
+                <div class="row px-0 mx-0 justify-content-center mt-3 gap-2 justify-content-sm-start py-5">
+                    <h2 class="fs-4 pb-2 border-bottom">Tecnologías Principales
+                        <a href="#">
+                            <i class="fa-solid fa-pen text-white fs-6"></i>
+                        </a>
+                    </h2>
+
+                    <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 ">
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-html5"></i>
+                        </div>
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-js"></i>
+                        </div>
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-bootstrap"></i>
+                        </div>
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-angular"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Listado Completo de Tecnologías-->
+            <div class="row mx-0 px-lg-5">
+                <h2 class="fs-4 pb-2 border-bottom">Listado completo de tecnologías:
+                    <a href="#">
+                        <i class="fa-solid fa-pen text-white fs-6"></i>
+                    </a>
+                </h2>
+                <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
+                    <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                        <p>MySQL</p>
+                      </div>
+                     
+                      <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                          <p>Wamp Server</p>
+                        </div>
+
+                      <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                        <p>Json</p>
+                      </div>
+                      <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                          <p>NodeJS</p>
+                      </div>
+
+                      <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                          <p>TypeScript</p>
+                        </div>
+
+                      <div class="tecnologias col text-center fs-5 p-2 p-md-3">
+                        <p>Java</p>
+                      </div>
+                </div>
+            </div>
+            <!--Futuro aprendzaje-->
+            <div class="row mx-0 px-lg-5">
+                <div class="row px-0 mx-0 justify-content-center mt-3 gap-2 justify-content-sm-start py-5">
+                    <h2 class="fs-4 pb-2 border-bottom">Futuro Aprendizaje
+                        <a href="#">
+                            <i class="fa-solid fa-pen text-white fs-6"></i>
+                        </a>
+                    </h2>
+
+                    <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 ">
+                        <div class="tecnologias col-2 text-center fs-1">
+                            <i class="habilidadesIcon fa-brands fa-react"></i>
+                        </div>
+                        <div class="tecnologias col-2 text-center fs-1">
+                          <i class="habilidadesIcon fa-brands fa-python"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

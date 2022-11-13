@@ -1,0 +1,25 @@
+/* Botón de Descarga */
+.btn-shell{
+    background-color: var(--light);
+    color: #fff;
+    text-shadow: 0px 2px 2px var(--dark);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;}
+.btn-shell:hover{
+    background-color: var(--medium);
+    transition: ease-in 0.3s;}
+
+/*Título*/
+.ts-dark{
+    color: var(--light);
+    text-shadow: 0px 8px 5px  var(--dark);}
+
+/*Fondo*/
+.principal{
+    background-image: url(src\assets\images\cozydesk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+/*Banner*/
+.banner{height: 90vh;}

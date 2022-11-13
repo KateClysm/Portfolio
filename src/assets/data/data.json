@@ -9,7 +9,7 @@
 
     "linked_in": "https://ar.linkedin.com/in/maria-monchot?trk=public_profile_samename-profile",
 
-    "education":[
+    "educacion":[
         {
             "name": "Bachillerato en Comunicación",
             "mediante": "Presencialidad",
@@ -87,5 +87,4 @@
             "detalle": "Lorem impsum dolor de lamentum3"
         }
     ]
-
 }

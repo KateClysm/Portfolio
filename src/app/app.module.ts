@@ -1,35 +1,38 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavComponent } from './componentes/nav/nav.component';
-import { BanerComponent } from './componentes/baner/baner.component';
-import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
-import { FooterComponent } from './componentes/footer/footer.component';
-import { SobremiComponent } from './componentes/sobremi/sobremi.component';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { AccesoComponent } from './componentes/acceso/acceso.component';
+import { SharedModule } from './modules/shared/shared.module';
+import { BanerModule } from './modules/baner/baner.module';
+import { ContactModule } from './modules/contact/contact.module';
 
-
+//Angular define los módulos como clases a través del decorador @NgModule.
 @NgModule({
+
+  //Componenttes u otros artefactos que incluye este módulo
   declarations: [
-    AppComponent,
-    NavComponent,
-    BanerComponent,
-    ExperienciaComponent,
-    ContactoComponent,
-    FooterComponent,
-    SobremiComponent,
-    AccesoComponent,
+    AppComponent
   ],
-  imports: [
+
+  //Clases necesarias para que el módulo funcione correctamente
+    imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+
+    SharedModule,
+    BanerModule,
+    ContactModule
   ],
+
+  //Proveedores de servicios necesarios
   providers: [],
+
+  //Componente raíz que Angular crea e inserta en la página web de host index.html
   bootstrap: [AppComponent]
 })
+
+//Componentes exportados hacia fuera del módulo.
 export class AppModule { }

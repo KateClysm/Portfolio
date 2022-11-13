@@ -3,37 +3,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*CLASES REUTILIZADAS*/
 :root{
-    --dark: #483940;
+    --dark: #2a1d23;
     --medium: #896454;
     --light:#c3a08f;
     --peach: #d4c3ac;
     --oldblue: #7c9ac3;
 }
-
-
-/*CUERPO*/
-.cuerpo{
-    font-family: 'Montserrat', sans-serif;    
-}
-.principal{
-    background-image: url(assets/images/cozydesk.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-
-}
-.contacto{
-    background-image: url(src\assets\images\pexels-merve-tülek-11093427.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-/*CUERPO*/
 
 /*temporal para edición*/
 .img-section{
