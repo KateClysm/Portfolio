@@ -1,0 +1,33 @@
+<div class="login-bg">
+
+    <!--Se necesita una row para alinear el contenido al centro-->
+    <form class="container row text-center login-section my-auto align-items-center align-content-center justify-content-center mx-auto">
+        <!--Una col para encapsular las rows y que cambien de tamaño-->
+        <div class="col col-sm-6 col-md-5">
+        <!--Rows-->
+
+        <!--Row Título-->
+        <div class="row form-floating pb-2 px-2">
+            <h2 class="text-white text-center fs-3 text-shadow">Acceso Privado al Editor</h2>
+        </div>
+        <!--Row Email-->
+        <div class="row form-floating pb-2 px-2">
+            <input type="email" class="form-control" id="floatingInput" placeholder="email@gmail.com">
+            <label for="floatingInput" class="px-4 text-muted">email@gmail.com</label>
+        </div>
+        <!--Row Contraseña-->
+        <div class="row form-floating pb-2 px-2 ">
+            <input type="password" class="form-control " id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword" class="px-4 text-muted">********</label>
+        </div>
+        <!--Row Botón Entrar-->
+        <div class="row form-floating pb-2 px-2">
+            <button class="btn btn-lg btn-shell " type="submit">Entrar</button>
+        </div>
+
+        </div>
+    </form>
+
+    <!--Footer-->
+    <app-footer></app-footer>
+</div>

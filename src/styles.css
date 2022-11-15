@@ -19,15 +19,15 @@
 .img-section{
     width: 280px;
 }
-.info{
+/*Edición temporaria para editar el ruteo y cambio de fóndos*/
+/* .fondo-dinamico{
     background: linear-gradient(var(--dark), var(--medium), var(light));
     background-image: url(src\assets\images\image.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
-.experiencia{
-    background-image: url( src\assets\images\pexels-merve-tülek-11093427.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.fondo-dinamico{
+    background-color: var(--medium);
 }

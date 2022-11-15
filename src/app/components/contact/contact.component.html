@@ -1,0 +1,66 @@
+<div class="container-contacto">
+    <!-- Formulario -->
+    <div class="container d-flex align-items-center px-0 justify-content-center contacto">
+
+        <!-- Row -->
+        <div class="row align-items-center justify-content-center mx-0">
+
+            <!-- Columna del Formulario-->
+            <div class="col-12 col-sm col-lg-6">
+                <!-- Título -->
+                <h2 class="text-center pb-2 fs-3 text-white text-shadow">Contactame</h2>
+                <!-- Row -->
+                <div class="row">
+                    <!-- Columnas Breakpoint 6 -->
+                    <div class="col-6">
+                        <input type="text" class="form-control shadow-none" placeholder="Nombre">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control shadow-none" placeholder="Asunto">
+                    </div>
+                     <!-- Columnas Breakpoint 12 -->
+                    <div class="col-12 pt-2">
+                    <input type="text" class="form-control shadow-none" placeholder="email@gmail.com">
+                    </div>
+                    <div class="col-12 pt-2">
+                        <textarea name="" id="" class="form-control shadow-none" placeholder="Escriba su Email"></textarea>
+                    </div>
+                    <div class="col-12 pt-2">
+                        <!-- Botón de Envado con un Modal-->
+                        <button type="button" class="btn-shell p-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Enviar
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Hola visitante!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <p>Tu email fue enviado correctamente :)</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn-shell p-2 px-3" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Columna de la Imagen -->
+            <div class="col-12 col-sm-4 col-lg-3  ">
+                <img src=".\assets\images\love-letter.png" class=" img-contacto d-block img-fluid p-0 mx-auto pb-sm-3" alt="">
+            </div>
+           
+        </div>
+
+    </div>
+    
+    <!--Footer-->
+    <app-footer></app-footer>
+</div>
