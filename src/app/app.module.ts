@@ -13,6 +13,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 //Angular define los módulos como clases a través del decorador @NgModule.
 @NgModule({
@@ -25,7 +26,8 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     ExperienceComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    CreditsComponent
   ],
   //Modulos necesarios para que el módulo funcione correctamente
     imports: [

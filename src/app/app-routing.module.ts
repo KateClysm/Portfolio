@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactComponent } from './components/contact/contact.component';
+import { CreditsComponent } from './components/credits/credits.component';
 
 
 //Importamos nuestros componentes
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'Sobre-Mi', component: InfoComponent },
   {path: 'Experiencia', component: ExperienceComponent},
   {path: 'Contacto', component: ContactComponent},
-  {path: 'Acceso', component: LoginComponent}
+  {path: 'Acceso', component: LoginComponent},
+  {path: 'Creditos', component: CreditsComponent},
 ];
 
 @NgModule({

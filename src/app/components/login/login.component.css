@@ -1,16 +1,3 @@
-/*Botón de enviado*/
-.btn-shell{
-    background-color: var(--medium);
-    color: #fff;
-    text-shadow: 0px 2px 2px var(--dark);
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;}
-/*Hover botón de enviado*/
-.btn-shell:hover{
-    background-color: var(--light);
-    transition: ease-in 0.3s;}
-
 /*Configuración del form-control. Quitado del outline y box shadow*/
 .form-control:focus {
     outline: 0;
@@ -20,19 +7,14 @@
 
 /*Borde de los input*/
 .form-control{
-    border: 1px solid var(--light);}
+    border: 2px solid var(--light);}
 
 /*Fondo*/
 .login-bg{
-    background-image: url(src\assets\images\cozydesk.jpg);
+    background-image: url(src\assets\images\pexels-kate-trifo-4057059.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;}
+    background-size: cover;}
+
 /*Height*/
 .login-section{
-    height: 80vh;
-}
-/*Text Shadow para el título*/
-.text-shadow{
-    text-shadow: 0px 2px 2px var(--dark);
-}
+    height: 80vh;}

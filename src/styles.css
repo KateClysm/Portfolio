@@ -1,33 +1,41 @@
 /*TO ALL*/
-*{
-    padding: 0;
+*{  padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
+    font-family: 'Montserrat', sans-serif;}
 
 /*CLASES REUTILIZADAS*/
 :root{
-    --dark: #2a1d23;
+    --dark: #1d1719;
     --medium: #896454;
     --light:#c3a08f;
-    --peach: #d4c3ac;
-    --oldblue: #7c9ac3;
-}
+    --dust: #a99b94a7;
+    --deepblue: #167e8c5f;
+    --storm: #3e3037;}
 
-/*temporal para edición*/
+
+/*Clases utilizadas en más de un componente*/
+
+/*imágenes en sobre mí y experiencia*/
 .img-section{
-    width: 280px;
-}
-/*Edición temporaria para editar el ruteo y cambio de fóndos*/
-/* .fondo-dinamico{
-    background: linear-gradient(var(--dark), var(--medium), var(light));
-    background-image: url(src\assets\images\image.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-
-.fondo-dinamico{
+    width: 280px;}
+/*botón color medium usado en inicio, contacto y login*/
+.btn-medium{
     background-color: var(--medium);
-}
+    color: #fff;
+    text-shadow: 0px 2px 2px var(--dark);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;}
+.btn-medium:hover{
+    background-color: var(--light);
+    transition: ease-in 0.3s;} 
+
+/*Text Shadow para los títulos*/
+.text-shadow{
+    text-shadow: 0px 2px 2px var(--dark);}
+
+/*Texto Pequeño*/
+.sm-text{
+    font-size: small;}
+
