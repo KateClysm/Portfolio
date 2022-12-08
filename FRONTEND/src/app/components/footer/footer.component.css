@@ -1,0 +1,17 @@
+/*Hover de los íconos Github y StackOverflow*/
+.nav-link i:hover{
+    color: var(--dark);
+    transition: ease-in 0.3s; }
+
+/*Height*/
+.footer{
+    height: 10vh;
+}
+
+.credits:hover{
+    color: var(--dark);
+    transition: ease-in 0.3s; }
+
+.nav-item:hover{
+    color: var(--dark);
+    transition: ease-in 0.3s; }
