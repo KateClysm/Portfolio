@@ -4,7 +4,8 @@ import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
 //
 import { HttpClientModule } from '@angular/common/http';
-
+//
+import { FormsModule } from '@angular/forms';
 //Rutas
 import { AppRoutingModule } from './app-routing.module';
 //Components
@@ -17,6 +18,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { Page404Component } from './components/page404/page404.component';
+//
 
 
 //Angular define los módulos como clases a través del decorador @NgModule.
@@ -35,10 +37,12 @@ import { Page404Component } from './components/page404/page404.component';
   ],
   //Modulos necesarios para que éste módulo funcione correctamente
     imports: [
+    BrowserModule, //
+    HttpClientModule, //
+    AppRoutingModule, //módulo de rutas
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    AppRoutingModule //módulo de rutas
+    FormsModule, 
+    
   ],
   //Proveedores de servicios necesarios
   providers: [],

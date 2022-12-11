@@ -2,14 +2,15 @@
 textarea{resize: none;}
 
 /*Espacio que abarca en pantalla el formulario de contacto*/
-.contacto{height: 80vh;}
+.contact-section{height: 83vh;}
 
 /*Imagen de fondo */
 .container-contacto{
     background-image: url(src\assets\images\pexels-kate-trifo-4057059.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;}
+    height: 90vh;
+    }
 
 /*Configuración del form-control. Quitado del outline y box shadow*/
 .form-control:focus {

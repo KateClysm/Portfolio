@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+// import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-experience',
@@ -8,16 +8,24 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class ExperienceComponent implements OnInit {
 
-  experienciaList:any;
-  proyectosList:any;
-
-  constructor(private datosPortfolio:PortfolioService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.experienciaList=data.experiencia;
-
-      this.proyectosList=data.proyectos;
-    })
   }
+
 }
+// export class ExperienceComponent implements OnInit {
+
+//   experienciaList:any;
+//   proyectosList:any;
+
+//   constructor(private datosPortfolio:PortfolioService) { }
+
+//   ngOnInit(): void {
+//     this.datosPortfolio.obtenerDatos().subscribe(data =>{
+//       this.experienciaList=data.experiencia;
+
+//       this.proyectosList=data.proyectos;
+//     })
+//   }
+// }
