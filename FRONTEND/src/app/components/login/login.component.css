@@ -13,8 +13,15 @@
 .login-bg{
     background-image: url(src\assets\images\pexels-kate-trifo-4057059.jpg);
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+    height: 90vh;}
 
 /*Height*/
 .login-section{
-    height: 82vh;}
+    height: 81vh;}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -18,7 +18,7 @@ const routes: Routes = [
   {path: 'Sobre-Mi', component: InfoComponent },
   {path: 'Experiencia-Y-Proyectos', component: ExperienciaComponent},
   {path: 'Contacto', component: ContactComponent},
-  {path: 'login', component: LoginComponent},
+  {path: 'Acceso', component: LoginComponent},
   {path: 'Creditos', component: CreditsComponent},
   {path: '**', component: Page404Component}
 ];
