@@ -14,6 +14,7 @@ import { LoginComponent } from "./components/login/login.component";
 import { NavComponent } from "./components/nav/nav.component";
 import { Page404Component } from "./components/page404/page404.component";
 import { interceptorProvider } from "./services/interceptor-service";
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 
 
 
@@ -30,6 +31,7 @@ import { interceptorProvider } from "./services/interceptor-service";
     ContactComponent,
     LoginComponent,
     Page404Component,
+    NewExperienciaComponent,
   ],
   //Modulos necesarios para que éste módulo funcione correctamente
     imports: [

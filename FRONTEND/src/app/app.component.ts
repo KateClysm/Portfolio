@@ -13,7 +13,3 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'PortfolioAngular';
 }
-
-
-//app.component.ts: controlador donde se encuentra la lógica.
-//Este archivo debe incluir una clase y esta es la que va a contener las propiedades que se van a usar en la vista y los metodos que serán las acciones que se ejecutarán en la misma. En este archivo de lógica también se incluye una metadata, que es definida con un decorador, que identifica a Angular como un componente.
