@@ -29,7 +29,7 @@
             <div class="row mx-0 px-lg-5 pb-5">
                 <!--Título-->
                 <h2 class="fs-4 px-1 pb-3 border-bottom text-shadow">Quiénes confían en mi trabajo</h2>
-                <div class="col-lg-2 py-3">
+                <div class="m-0 p-0">
                     <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
                         Agregar Experiencia
                     </button>
@@ -38,14 +38,26 @@
                 <!--Contenedor de las card de Experiencia-->
                 <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
                     <!--Columnas de Cards de Trabajo con For-->
-                    <div class="col-12 col-md col-lg text-center text-sm-start px-3 card-trabajo py-2 py-lg-3" *ngFor="let Experiencia of expe">
+                    <div class="col-12 col-md-4 text-center text-sm-start px-3 card-trabajo py-2 py-lg-3" *ngFor="let Experiencia of expe">
                         <!--Logo de las Empresas-->
                         <div class="logo-trabajo py-3">
                             <img class="logo-trabajo"height="40px">
                         </div>
                         <h5 class="pt-2">{{Experiencia.nombreE}}</h5>
                         <p class="card-text sm-text">{{Experiencia.descripcionE}}</p>
-                        <p class="card-text sm-text">00/00/0000</p>
+                        <div class="d-flex" *ngIf="isLogged">
+                            <div class="p-1">
+                                <button class="btn-medium px-2 py-1 sm-text" routerLink="/editexp/{{Experiencia.id}}" >
+                                    <i class="fa-regular fa-pen-to-square p-1"></i>Editar
+                                </button>
+                            </div>
+                           <div class="p-1">
+                                <button class="btn-medium px-2 py-1 sm-text" (click)="delete(Experiencia.id)">
+                                    <i class="fa-regular fa-trash-can p-1"></i>Borrar
+                                </button>
+                           </div>
+                        </div>
+                       
                     </div>
                 </div>  
             </div>
@@ -54,15 +66,15 @@
             <div class="row mx-0 px-lg-5 pb-3">
                 <!--Título-->
                 <h2 class="fs-4 px-1 pb-3 border-bottom text-shadow">Proyectos</h2>
-                <div class="col-lg-2 py-3">
-                    <button class="btn-medium px-3 py-2" type="button" *ngIf="isLogged">
+                <div class="m-0 p-0">
+                    <button class="btn-medium px-3 py-2" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
                         Agregar Proyecto
                     </button>
                 </div>
                 <!--Contenedor de las card de Experiencia-->
                 <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
                     <!--Columnas de Cards de Trabajo con For-->
-                    <div class="col-12 col-md col-lg text-center text-sm-start card-proyecto p-1" *ngFor="let Experiencia of expe">
+                    <div class="col-12 col-md-4 text-center text-sm-start card-proyecto p-1">
                         <div class="card-image">
                             <img src=".\assets\images\cozydesk.jpg" class="card-img-top" width="100%" height="200" >
                         </div>

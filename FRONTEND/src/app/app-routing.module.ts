@@ -8,6 +8,9 @@ import { CreditsComponent } from './components/credits/credits.component';
 import { Page404Component } from './components/page404/page404.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/info/neweducacion/neweducacion.component';
+import { EditeducacionComponent } from './components/info/editeducacion/editeducacion.component';
 
 
 //Mis rutas
@@ -20,6 +23,9 @@ const routes: Routes = [
   {path: 'Acceso', component: LoginComponent},
   {path: 'Creditos', component: CreditsComponent},
   {path: 'nuevaexp', component: NewExperienciaComponent},
+  {path: 'editexp/:id', component: EditExperienciaComponent},
+  {path: 'nuevaedu', component: NeweducacionComponent},
+  {path: 'editedu/:id', component: EditeducacionComponent},
   {path: '**', component: Page404Component}
 ];
 

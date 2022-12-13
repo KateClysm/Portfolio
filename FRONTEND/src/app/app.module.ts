@@ -15,6 +15,9 @@ import { NavComponent } from "./components/nav/nav.component";
 import { Page404Component } from "./components/page404/page404.component";
 import { interceptorProvider } from "./services/interceptor-service";
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/info/neweducacion/neweducacion.component';
+import { EditeducacionComponent } from './components/info/editeducacion/editeducacion.component';
 
 
 
@@ -32,6 +35,9 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
     LoginComponent,
     Page404Component,
     NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
   ],
   //Modulos necesarios para que éste módulo funcione correctamente
     imports: [

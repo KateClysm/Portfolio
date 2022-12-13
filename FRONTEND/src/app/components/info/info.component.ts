@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/services/persona.service';
-// import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { Educacion } from 'src/app/model/educacion';
+import { EducacionService } from 'src/app/services/educacion.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-info',
@@ -10,27 +10,37 @@ import { PersonaService } from 'src/app/services/persona.service';
 })
 
 export class InfoComponent implements OnInit {
+  educacion: Educacion[] = [];
 
-  persona: persona = new persona("", "", "");
-
-  constructor(public personaService: PersonaService) { }
+  constructor(private educacionS: EducacionService, private tokenService: TokenService) { }
+  isLogged = false;
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
-    
+    this.cargarEducacion();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
 
+  cargarEducacion(): void{
+    this.educacionS.lista().subscribe(
+      data =>{
+        this.educacion = data;
+      }
+    )
+  }
+
+  delete(id?: number){
+    if( id != undefined){
+      this.educacionS.delete(id).subscribe(
+        data => {
+          this.cargarEducacion();
+        }, err => {
+          alert("No se pudo eliminar");
+        }
+      )
+    }
+  }
 }
-
-// implements OnInit {
-
-//   educacionList:any;
-
-//   constructor(private datosPortfolio:PortfolioService) { }
-
-//   ngOnInit(): void {
-//     this.datosPortfolio.obtenerDatos().subscribe(data =>{
-//       this.educacionList=data.educacion;
-//     })
-//   }
-// }
