@@ -10,6 +10,7 @@ import { TokenService } from 'src/app/services/token.service';
 })
 
 export class InfoComponent implements OnInit {
+  [x: string]: any;
   educacion: Educacion[] = [];
 
   constructor(private educacionS: EducacionService, private tokenService: TokenService) { }

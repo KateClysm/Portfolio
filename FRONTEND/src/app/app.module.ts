@@ -18,6 +18,8 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/info/neweducacion/neweducacion.component';
 import { EditeducacionComponent } from './components/info/editeducacion/editeducacion.component';
+import { EditSkillComponent } from './components/info/edit-skill/edit-skill.component';
+import { NewSkillComponent } from './components/info/new-skill/new-skill.component';
 
 
 
@@ -38,6 +40,8 @@ import { EditeducacionComponent } from './components/info/editeducacion/editeduc
     EditExperienciaComponent,
     NeweducacionComponent,
     EditeducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
   ],
   //Modulos necesarios para que éste módulo funcione correctamente
     imports: [
