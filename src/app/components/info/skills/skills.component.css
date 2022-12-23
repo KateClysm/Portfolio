@@ -1,0 +1,7 @@
+.card-skill{
+    background-color:#a99b94a7;
+    border-radius: 1rem;}
+
+/*Hover de las Card Educación*/
+.card-skill:hover{
+    background-color:#167e8c5f;}

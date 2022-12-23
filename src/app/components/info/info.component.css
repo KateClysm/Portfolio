@@ -7,13 +7,6 @@
     border-radius: 1rem;}
 
 /*Fondo de las Card de Educación*/
-.card-educacion{
-    background-color:#a99b94a7;
-    border-radius: 1rem;}
-
-/*Hover de las Card Educación*/
-.card-educacion:hover{
-    background-color:#167e8c5f;}
 /*ïconos de Tecnologías*/
 .tecnologias{
     text-shadow: 0px 5px 2px  var(--dark);}
