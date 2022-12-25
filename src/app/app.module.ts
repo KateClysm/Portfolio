@@ -23,6 +23,7 @@ import { EducacionComponent } from "./components/info/educacion/educacion.compon
 import { SkillsComponent } from "./components/info/skills/skills.component";
 import { ExperienciaYProyectosComponent } from "./components/experiencia-y-proyectos/experiencia-y-proyectos.component";
 import { ExperienciaComponent } from "./components/experiencia-y-proyectos/experiencia/experiencia.component";
+import { EditAcercaDeComponent } from './components/home/edit-acerca-de.component';
 
 
 
@@ -48,6 +49,7 @@ import { ExperienciaComponent } from "./components/experiencia-y-proyectos/exper
     NewSkillComponent,
     EducacionComponent,
     SkillsComponent,
+    EditAcercaDeComponent,
 
   ],
   //Modulos necesarios para que éste módulo funcione correctamente

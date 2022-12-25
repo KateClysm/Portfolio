@@ -9,8 +9,8 @@
     <!--Contenedor de las Card de Educación-->
     <div class="row px-0 mx-0 justify-content-center pt-3 gap-2 justify-content-sm-start">
         <!--Card iterada con For-->
-        <div class="col-auto text-center text-sm-start card-skill py-3 px-4" *ngFor="let skill of skill">
-            <h6 class="text-center">{{skill.nombre}}</h6>
+        <div class="col-auto text-sm-start card-skill py-3 px-4" *ngFor="let skill of skill">
+            <h6 class="text-center m-0">{{skill.nombre}}</h6>
             <!--Botones Editar y Borrar-->
             <div class="d-flex align-content-end align-items-end" *ngIf="isLogged">
                 <div class="p-1">
