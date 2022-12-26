@@ -1,15 +1,11 @@
-<div class="container" *ngIf="skill">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre de la Skill</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
-                </div>
-                <button class="btn btn-primary">
-                    Actualizar
-                </button>
-            </form>
+<div class="container-fluid abs-center editSkill" *ngIf="skill">
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="text-white col-5">
+        <div class="form-group pb-3">
+            <label for="nombre" >Nombre de la Skill</label>
+            <input type="text" class="form-control"  id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
         </div>
-    </div>
+        <button class="btn-medium px-3 py-2">
+            Actualizar Skill
+        </button>
+    </form>
 </div>
