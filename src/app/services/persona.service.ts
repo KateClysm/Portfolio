@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  authURL = 'https://localhost:8080/personas/'
+  authURL = 'https://backendmariamonchot.onrender.com/personas/'
 
   constructor(private httpClient: HttpClient) { }
 

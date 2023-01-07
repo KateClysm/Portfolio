@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  authURL = 'https://localhost:8080/skill/'
+  authURL = 'https://backendmariamonchot.onrender.com/skill/'
   
   constructor(private httpClient: HttpClient) { }
 

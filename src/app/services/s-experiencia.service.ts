@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class SExperienciaService {
 
-  authURL = 'https://localhost:8080/explab/'
+  authURL = 'https://backendmariamonchot.onrender.com/explab/'
 
   constructor(private httpClient: HttpClient) { }
 

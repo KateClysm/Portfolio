@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  authURL = 'https://localhost:8080/educacion/'
+  authURL = 'https://backendmariamonchot.onrender.com/educacion/'
 
   constructor(private httpClient : HttpClient) { }
 
