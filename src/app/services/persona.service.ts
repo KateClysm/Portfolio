@@ -10,16 +10,16 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL = environment.URL + 'personas/';
+  authURL = 'https://localhost:8080/persona/'
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{
-    return this.httpClient.get<persona[]>(this.URL + 'lista');
+    return this.httpClient.get<persona[]>(this.authURL + 'lista');
   }
 
   public detail(id: number): Observable<persona>{
-    return this.httpClient.get<persona>(this.URL + `detail/${id}`);
+    return this.httpClient.get<persona>(this.authURL + `detail/${id}`);
   }
 
   // public save(educacion: Educacion): Observable<any>{
@@ -27,7 +27,7 @@ export class PersonaService {
   // }
 
   public update(id: number, Persona: persona): Observable<any>{
-    return this.httpClient.put<any>(this.URL + `update/${id}`, persona);
+    return this.httpClient.put<any>(this.authURL + `update/${id}`, persona);
   }
 
   // public delete(id: number): Observable<any>{
